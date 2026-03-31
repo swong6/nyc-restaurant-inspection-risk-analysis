@@ -1,10 +1,10 @@
 # Reducing Inspection Risk Across NYC Restaurant Operations
 
 ## Overview
-[cite_start]Poor inspection outcomes can damage brand trust and increase operational risk[cite: 323]. [cite_start]This project analyzes ~296K inspection records to reduce inspection risk, avoid grade drops, and protect brand reputation[cite: 319, 335].
+Poor inspection outcomes can damage brand trust and increase operational risk. This project analyzes ~296K inspection records to reduce inspection risk, avoid grade drops, and protect brand reputation.
 
 ## Objective
-[cite_start]Which violation patterns, cuisines, boroughs, and time periods are associated with worse inspection outcomes? [cite: 321]
+Which violation patterns, cuisines, boroughs, and time periods are associated with worse inspection outcomes?
 
 ## Tools Used
 - **Python** (Pandas, NumPy) for data cleaning and manipulation
@@ -12,47 +12,47 @@
 - **Tableau** for data visualization and presentation
 
 ## Process
-1. [cite_start]**Data Collection** – Sourced dataset from [NYC Open Data - DOHMH Restaurant Inspection Results](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/about_data)[cite: 332].
-2. [cite_start]**Data Cleaning** – Removed duplicate records and excluded irrelevant location and administrative fields[cite: 338, 339].
-3. [cite_start]**Feature Engineering** – Grouped granular violation descriptions into broader categories such as sanitation, pests, temperature, and food safety[cite: 340, 341].
-4. [cite_start]**Analysis** – Evaluated variables including borough, cuisine type, inspection date, score, grade, and violation details[cite: 336].
+1. **Data Collection** – Sourced dataset from [NYC Open Data - DOHMH Restaurant Inspection Results](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/about_data).
+2. **Data Cleaning** – Removed duplicate records and excluded irrelevant location and administrative fields.
+3. **Feature Engineering** – Grouped granular violation descriptions into broader categories such as sanitation, pests, temperature, and food safety.
+4. **Analysis** – Evaluated variables including borough, cuisine type, inspection date, score, grade, and violation details.
 
 ## Violation Categories & Scores
 ![Violation Categories](images/5.png)
 
 **Key Highlights:**
-- [cite_start]Sanitation and pests are the most frequent violations[cite: 570].
-- [cite_start]Temperature and Food Safety score the highest when they occur (avg 27-28)[cite: 577].
-- [cite_start]A lower inspection score is better, with scores of 0-13 earning an A grade[cite: 387, 390].
+- The most frequent issues found are pests and poor sanitation.
+- Food safety and temperature violations generate the highest penalty scores when they happen (averaging 27 to 28 points).
+- Lower scores are preferred; achieving an A grade requires scoring 13 points or fewer.
 
 ## Geographical Distribution
 ![Violations by Borough](images/8.png)
 
 **Key Findings:**
-- [cite_start]Interestingly, boroughs have similar inspection scores[cite: 507].
-- [cite_start]Violation types trend consistently throughout NY Boroughs[cite: 495].
-- [cite_start]The top three violations across the board are Sanitation, Pests, and Temperature[cite: 497, 499, 500].
+- Average inspection scores are surprisingly similar across all boroughs.
+- The types of violations follow a consistent pattern regardless of the NY borough.
+- Across the board, the top three issues remain temperature, pests, and sanitation.
 
 ## Temporal Trends
 ![Inspection Trends](images/11.png)
 
 **Key Findings:**
-- [cite_start]Inspection levels stayed relatively stable until 2021[cite: 538].
-- [cite_start]There was a sharp increase in inspections beginning in 2022[cite: 539].
-- [cite_start]Higher inspection activity leads to more violations being identified across multiple categories[cite: 540, 541].
+- Inspection volumes remained relatively steady until the end of 2021.
+- Starting in 2022, there was a dramatic spike in the number of inspections.
+- This increased inspection volume resulted in more violations being recorded across multiple categories.
 
 ## Key Insights
-- [cite_start]✅ **Cuisine Predictors:** Indian (31.7), Caribbean/African (29.7), and Chinese (29.0) score far worse than Fast Food (20.7) and Cafe/Bakery (21.6)[cite: 585].
-- [cite_start]✅ **Violation Consistency:** Sanitation, pests, temperature, and food safety make up the majority of inspection issues[cite: 572].
-- [cite_start]✅ **Geography is Secondary:** Cuisine type and repeat violation patterns are stronger predictors of outcomes than geography[cite: 603].
+- ✅ **Cuisine Predictors:** Indian, Caribbean/African, and Chinese establishments score significantly worse on average compared to Fast Food and Cafe/Bakery locations.
+- ✅ **Violation Consistency:** The vast majority of inspection issues stem from food safety, temperature, pests, and sanitation.
+- ✅ **Geography is Secondary:** Outcomes are predicted much more strongly by historical violation patterns and cuisine format rather than the restaurant's location.
 
 ## Conclusion & Recommendations
-[cite_start]Violation risk is predictable[cite: 602]. [cite_start]By focusing on targeted training, proactive audits, and predictive monitoring of high-risk locations, the organization can significantly improve inspection scores and strengthen its compliance culture[cite: 604].
+Inspection risks can be predicted. The organization can substantially boost its compliance culture and improve scores by prioritizing high-risk locations, conducting proactive audits, and implementing targeted training.
 
-- [cite_start]**Target High-Risk Violations:** Sanitation and Pests are the most frequent violations[cite: 577, 610]. [cite_start]Targeted training and kitchen checklists focused here have the biggest chain-wide impact[cite: 578].
-- [cite_start]**Shift to Proactive Compliance:** Most violations flagged by city inspectors are operational issues catchable earlier[cite: 580, 611]. [cite_start]Implement monthly internal audits using the official inspection framework so restaurants can fix problems before the city does[cite: 581].
-- [cite_start]**Prioritize High-Risk Cuisines:** Direct more compliance resources to higher-risk cuisine formats like Indian, Caribbean/African, and Chinese[cite: 585, 586, 611].
-- [cite_start]**Develop an Early Warning Risk Score:** Analyze past violations, scores, and repeat patterns by location to flag restaurants most likely to underperform and intervene early with targeted training or internal audits[cite: 587].
+- **Target High-Risk Violations:** The biggest chain-wide impact comes from kitchen checklists and targeted training aimed at the most frequent issues: pests and sanitation.
+- **Shift to Proactive Compliance:** The majority of city-flagged violations are operational and can be caught early. Setting up monthly internal audits using the city's official framework allows teams to resolve issues before official inspections.
+- **Prioritize High-Risk Cuisines:** Allocate more compliance support and resources to higher-risk formats like Chinese, Caribbean/African, and Indian.
+- **Develop an Early Warning Risk Score:** Create a system to flag underperforming restaurants early by analyzing historical repeat patterns, scores, and past violations, allowing for timely intervention.
 
 ## Deliverables
 - **Jupyter Notebook** – Complete data cleaning and exploratory data analysis workflow.
